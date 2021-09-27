@@ -67,3 +67,28 @@ textbox.value=textbox.value.toUpperCase();
    }
 
 }
+//mouse resmin uzerine geldiginde aslan kukresin
+resim.onmouseover=function() {
+    resim.src="./img/aslan2.jpeg";
+}
+//2.YOL
+//resim.addEventListener("mouseout",function(){
+//    resim.src="./img/aslan2.jpeg";
+//})
+
+//mouse resmin ustunden cekildiginde
+resim.onmouseout=function() {
+    resim.src="./img/aslan1.jpeg";
+}
+
+//enter=13  delete=46
+//onkeydown= klavyedeki tusa basip elinizi cektiginizde
+
+document.querySelector(".dil").onkeydown=function(klavye) {
+    if (klavye.keyCode==13) {//enter i cagirdik
+        document.querySelector(".ekle").onclick();
+    }if(klavye.keyCode==46) {  //delete yi cagirdik
+        document.querySelector(".sil").onclick();
+      
+}
+};

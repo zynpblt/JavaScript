@@ -31,8 +31,10 @@ document.querySelector(".kontrol").onclick = function () {
         : (mesaj.textContent = "Azalt 📉");
       document.querySelector(".skor").textContent = puanPc;
     } else {
-      mesaj.textContent = "Oyunu kaybettiniz😢";
+     document.querySelector(".mesaj").textContent="Oyunu Kaybettiniz";
       document.querySelector(".skor").textContent =0;
+      document.querySelector("body").style.backgroundColor="red";
+
     }
   }
 };

@@ -34,6 +34,6 @@ document.querySelector(".sil").onclick = function () {
 };
 
 const aciklamaGuncelle=function(maaslar){
-document.querySelector(".aciklama").innerHTML=`Maaslar: ${maaslar}`;
+document.querySelector(".aciklama").innerHTML=`Maaslar: ${maaslar.join(" ")}`;
 
 }

@@ -17,4 +17,16 @@ const giris=document.querySelector(".liste");
 document.querySelector(".ekle").onclick=function() {
 liste.innerHTML=liste.innerHTML+ `<li> ${giris.value}</li>`
 giris.value="";
+
+maaslar.push(giris.value);
 }
+
+//Sil butonuna tiklandiginda listedeki ve dizideki son elamani sil.
+document.querySelector(".sil").onclick = function () {
+  if (maaslar.length == 0) {
+    alert("Silinecek oge kalmadi.");
+  } else {
+    maaslar.pop();
+     liste.removeChild(liste.lastElementChild);
+  }
+};
